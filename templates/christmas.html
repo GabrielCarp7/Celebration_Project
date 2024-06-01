@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %}Celebrations Countdown{% endblock %}
+
+{% block content %}
+
+<div class="container">
+        <p class="display-3">🥳🎅🎄 Christmas Countdown 🎄🎅🥳</p>
+            <div class="countdown">
+                <div>
+                    <span id="days">00</span>
+                    <div class="label">Days</div>
+                </div>
+                <div>
+                    <span id="hours">00</span>
+                    <div class="label">Hours</div>
+                </div>
+                <div>
+                    <span id="minutes">00</span>
+                    <div class="label">Minutes</div>
+                </div>
+                <div>
+                    <span id="seconds">00</span>
+                    <div class="label">Seconds</div>
+                </div>
+            </div>
+            <div id="christmas-date" style="display: none;">{{ christmas_date }}</div>
+</div>
+
+{% endblock %}
