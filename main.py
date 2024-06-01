@@ -32,9 +32,6 @@ def home():
 
 @app.route("/easter")
 def easter():
-    # Get the current time
-    now = datetime.now()
-
     # Calculate the next Easter
     next_easter = datetime(2025, 4, 20)
 
